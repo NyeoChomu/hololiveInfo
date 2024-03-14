@@ -4,6 +4,9 @@
     <title>Hoshimachi Suisei</title>
     <meta charset="utf-8">
     <style>
+        body {
+            margin:0;
+        }
         #hololive {
             color:rgb(88, 170, 221);
         }
@@ -17,63 +20,84 @@
         h1 {
             font-size:60px;
             text-align: center;
+            border-bottom: 1px solid rgb(88, 170, 221);
+            margin:0;
+            padding:10px;
+        }
+        #list {
+            border-right: 1px solid rgb(88, 170, 221);
+            width: 200px;
+            margin:0;
+            padding:20px;
+            padding-left: 30px;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+        }
+        #article {
+            padding-left: 30px;
         }
     </style>
 </head>
 <body>
     <h1><a href="index.html" id="hololive">Hololive</a></h1>
-    <ol>
-        <li><a href="1.html" style="text-decoration: underline;">호시마치 스이세이</a></li>
-        <li><a href="2.html">시라카미 후부키</a></li>
-    </ol>
-    <h2>호시마치 스이세이</h2>
-    <img src="sui.webp" width="300px"><br>
-    <a href="https://www.youtube.com/@HoshimachiSuisei"
-    target="_blank" title="Suisei Channel" class="youtube">
-        호시마치 스이세이 공식 유튜브
-    </a>
-    <ol>
-        <li>개요</li>
-        <li>성격 및 방송 특징</li>
-        <li>오리지널 곡</li>
-    </ol>
-    <ol>
-        <p>
-            <h4><li>개요</li></h4>
-            hololive 프로덕션 소속의 버츄얼 유튜버.
-            원래부터 홀로라이브 소속은 아니었으며,
-            2018년 3월 22일에 개인 명의로 활동을 시작했다.
-            이후 2019년 5월 19일 Cover 산하의 별도 레이블인
-            이노나카 뮤직 소속으로 합류하였으며,
-            같은 해 12월 2일 정식으로 홀로라이브 소속으로 편입되었다.
-            지금은 홀로라이브 0기생으로 분류된다.
-        </p>
-        <p style="margin-top: 40px;">
-            <h4><li>성격 및 방송 특징</li></h4>
-            호시마치 스이세이는 활동을 시작한 순간부터 언제나 자신을
-            <strong>'아이돌 Vtuber'</strong>라고 소개하고 있다.
-            그 말이 무색하지 않게 홀로라이브에서
-            손에 꼽힐 정도로 뛰어난 가창력을 갖고 있고,
-            표현력이 좋고 음색이 매력적이어서
-            많은 팬들의 사랑을 받고 있다.
-            중저음역대를 가지고 있고,
-            음색이 허스키하기 때문에 밝고 귀여운 노래보단
-            R&B나 팝과 같은 메인스트림 가요와 특히 잘 어울린다는
-            평가가 많다.
-            스이세이가 공개하는 노래들은 항상 음원 사이트와 관련
-            커뮤니티에서 큰 이슈가 되며,
-            노래뿐만 아니라 댄스 실력도 꽤 좋은 편이어서
-            3D 라이브에서 안무를 소화하면서
-            비교적 안정적으로 노래를 부르는 모습을 자주 보여준다.
-        </p>
-        <p>
-            <h4><li>오리지널 곡</li></h4>
-            <iframe width="560" height="315" 
-            src="https://www.youtube.com/embed/mRgslQ5Z-kU?si=l5L_Uu1NiHFExIbY" 
-            title="YouTube video player" frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            allowfullscreen></iframe>
-        </p>
-    </ol>
+    <div id="grid">
+        <ol id="list">
+            <li><a href="1.html" style="text-decoration: underline;">호시마치 스이세이</a></li>
+            <li><a href="2.html">시라카미 후부키</a></li>
+        </ol>
+        <div id="article">
+            <h2>호시마치 스이세이</h2>
+            <img src="sui.webp" width="300px"><br>
+            <a href="https://www.youtube.com/@HoshimachiSuisei"
+            target="_blank" title="Suisei Channel" class="youtube">
+                호시마치 스이세이 공식 유튜브
+            </a>
+            <ol>
+                <li>개요</li>
+                <li>성격 및 방송 특징</li>
+                <li>오리지널 곡</li>
+            </ol>
+            <ol>
+                <p>
+                    <h4><li>개요</li></h4>
+                    hololive 프로덕션 소속의 버츄얼 유튜버.
+                    원래부터 홀로라이브 소속은 아니었으며,
+                    2018년 3월 22일에 개인 명의로 활동을 시작했다.
+                    이후 2019년 5월 19일 Cover 산하의 별도 레이블인
+                    이노나카 뮤직 소속으로 합류하였으며,
+                    같은 해 12월 2일 정식으로 홀로라이브 소속으로 편입되었다.
+                    지금은 홀로라이브 0기생으로 분류된다.
+                </p>
+                <p style="margin-top: 40px;">
+                    <h4><li>성격 및 방송 특징</li></h4>
+                    호시마치 스이세이는 활동을 시작한 순간부터 언제나 자신을
+                    <strong>'아이돌 Vtuber'</strong>라고 소개하고 있다.
+                    그 말이 무색하지 않게 홀로라이브에서
+                    손에 꼽힐 정도로 뛰어난 가창력을 갖고 있고,
+                    표현력이 좋고 음색이 매력적이어서
+                    많은 팬들의 사랑을 받고 있다.
+                    중저음역대를 가지고 있고,
+                    음색이 허스키하기 때문에 밝고 귀여운 노래보단
+                    R&B나 팝과 같은 메인스트림 가요와 특히 잘 어울린다는
+                    평가가 많다.
+                    스이세이가 공개하는 노래들은 항상 음원 사이트와 관련
+                    커뮤니티에서 큰 이슈가 되며,
+                    노래뿐만 아니라 댄스 실력도 꽤 좋은 편이어서
+                    3D 라이브에서 안무를 소화하면서
+                    비교적 안정적으로 노래를 부르는 모습을 자주 보여준다.
+                </p>
+                <p>
+                    <h4><li>오리지널 곡</li></h4>
+                    <iframe width="560" height="315" 
+                    src="https://www.youtube.com/embed/mRgslQ5Z-kU?si=l5L_Uu1NiHFExIbY" 
+                    title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    allowfullscreen></iframe>
+                </p>
+            </ol>
+        </div>
+    </div>
 </body>
 </html>
