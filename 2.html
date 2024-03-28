@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Shirakami Fubuki</title>
     <link rel="icon" href="icon.png">
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
 </head>
 <body>
     <h1><a href="index.html" id="hololive">Hololive</a></h1>
     <div id="grid">
         <ol id="list">
+            <input id="changeMode" type="button" value="야간모드 on" onclick="
+            nightDayHandler(this);
+            ">
             <li><a href="1.html">호시마치 스이세이</a></li>
             <li><a href="2.html" class="now">시라카미 후부키</a></li>
         </ol>
